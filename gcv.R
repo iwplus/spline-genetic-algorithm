@@ -1,9 +1,7 @@
 #' Splines with genetic algorithms optimization method
 #'
-#' Fungsi ini dibuat untuk mencari nilai GCV pada Spline Truncated. Dimana dalam
-#' fungsi ini terdapat fungsi-fungsi yang lain yang dibutuhkan. data yang akan
-#' dimasukkan di fungsi ini harus disimpan terdahulu di dalam data frame, dengan
-#' format Y adalah variabel dependen, dan X adalah variabel indevenden.
+#' This function is created to calculate GCV value in Spline Truncated Regression
+#' Y is the dependent variable, and X are independent variables.
 #'
 #' @param x matriks independen
 #' @param y matriks dependen
