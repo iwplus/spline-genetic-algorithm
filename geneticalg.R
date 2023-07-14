@@ -1,18 +1,13 @@
 #' Splines with genetic algorithms optimization method
 #'
-#' Fungsi ini dibuat untuk mencari nilai GCV pada Spline Truncated. Dimana dalam
-#' fungsi ini terdapat fungsi-fungsi yang lain yang dibutuhkan. data yang akan
-#' dimasukkan di fungsi ini harus disimpan terdahulu di dalam data frame, dengan
-#' format Y adalah variabel dependen, dan X adalah variabel indevenden.
-#'
-#' @param x matriks independen
-#' @param y matriks dependen
-#' @param nknot banyaknya titik knot
-#' @param p orde yang diinginkan
-#' @param a banyak populasi yang diinginkan
-#' @param iterasi banyaknya pengulangan
-#' @param permu nilai permutasi dalam proses mutasi
-#' @return fungsi Spline yang menggunakan metode Algoritma Genetika
+#' @param x independent variables matrix
+#' @param y dependent variable matrix
+#' @param nknot number of knot points
+#' @param p spline polynomial order
+#' @param a number of population
+#' @param iterasi maximum iteration
+#' @param permu permutation in mutation
+#' @return spline function using GA
 #' @export
 
 
