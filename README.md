@@ -1,5 +1,5 @@
 # spline-genetic-algorithm
-Search for optimal knot points for Spline Truncated non-parametric regression using Genetic Algorithm. The polynomial order for all independent variables are equal
+Search for optimal knot points for Spline Truncated non-parametric regression using Genetics Algorithm. The polynomial order for all independent variables are equal
 
 To use it, you can install the package locally.
 
