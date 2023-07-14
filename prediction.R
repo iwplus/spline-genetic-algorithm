@@ -1,18 +1,12 @@
 #' Splines with genetic algorithms optimization method
-#'
-#' Fungsi ini dibuat untuk mencari nilai GCV pada Spline Truncated. Dimana dalam
-#' fungsi ini terdapat fungsi-fungsi yang lain yang dibutuhkan. data yang akan
-#' dimasukkan di fungsi ini harus disimpan terdahulu di dalam data frame, dengan
-#' format Y adalah variabel dependen, dan X adalah variabel indevenden.
-#'
-#' @param x matriks independen
-#' @param y matriks dependen
-#' @param nknot banyaknya titik knot
-#' @return fungsi Spline yang menggunakan metode Algoritma Genetika
+#' Spline using Genetics Algorithm
+#' @param x independent variables matrix
+#' @param y dependent variable matrix
+#' @return spline function using GA
 #' @export
 
 ##########################################################
-################## TITIK KNOT ############################
+################## KNOT POINTS ############################
 ##########################################################
 
 knot = function(x,nknot)
@@ -30,7 +24,7 @@ knot = function(x,nknot)
 
 
 ##########################################################
-#################### Ytopi #################################
+#################### Yhat #################################
 ##########################################################
 #' @export
 ytopi = function (y,x,knot,p)
@@ -85,7 +79,7 @@ ytopi = function (y,x,knot,p)
 
 
 ##########################################################
-#################### matrix X #################################
+#################### X matrix #################################
 ##########################################################
 #' @export
 ram = function (y,x,knot,p)
