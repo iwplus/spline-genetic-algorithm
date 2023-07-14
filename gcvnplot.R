@@ -1,16 +1,11 @@
-#' Fungsi Spline menggunakan metode Algoritma genetika
+#' Spline using Genetics Algorithm
 #'
-#' Fungsi ini dibuat untuk mencari nilai GCV pada Spline Truncated. Dimana dalam
-#' fungsi ini terdapat fungsi-fungsi yang lain yang dibutuhkan. data yang akan
-#' dimasukkan di fungsi ini harus disimpan terdahulu di dalam data frame, dengan
-#' format Y adalah variabel dependen, dan X adalah variabel indevenden.
-#'
-#' @param x matriks independen
-#' @param y matriks dependen
-#' @return fungsi Spline yang menggunakan metode Algoritma Genetika
+#' @param x independent variables matrix
+#' @param y dependent variable
+#' @return spline function using GA
 #' @export
 #############################################################
-################ HAL YANG DIPERLUKAN ########################
+################ Some required functions ########################
 #############################################################
 
 library(pracma)
@@ -89,7 +84,7 @@ gcv = function (y,x,knot,p)
 
  plot(y, type="o", col="blue", lty=1)
  lines(Ytopi, type="o",col="red",  lty=2)
- legend(1, max(y), legend=c("Data Aktual", "Data Estimasi"), col=c("blue", "red"), lty=1:2, cex=0.8, title="Keterangan", text.font=4, bg='white',box.lty=2, box.lwd=2, box.col="steelblue")
+ legend(1, max(y), legend=c("Actual Data", "Estimated Data"), col=c("blue", "red"), lty=1:2, cex=0.8, title="Keterangan", text.font=4, bg='white',box.lty=2, box.lwd=2, box.col="steelblue")
  return(gcv)
 }
 
